@@ -2,40 +2,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Eat Street</title>
+  <title>Eat Street</title>
+  
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <style type="text/css">
-    body { padding-top: 70px; }
-    .jumbotron {
-      color: #2c3e50;
-      background: #ecf0f1;
-
-    }
-    .navbar-inverse {
-      background: #2c3e50;
-      color: white;
-    }
-    .navbar-inverse .navbar-brand, .navbar-inverse a{
-      color:white;
-    }
-    .navbar-inverse .navbar-nav>li>a {
-      color: white;
-    } 
-
-    body {
-      background-color: #55bcc9;
-    }
-
-    #footer {
-      font-size: 22;
-      font-weight: bold;
-    }
-  </style>
-
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="qrcodeStyling2.css">
+  
+ 
 </head>
 <body>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script>
+  <script type="text/javascript" src="add.js"> </script> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<nav class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container">
@@ -68,17 +49,45 @@
               STARTERS
             </button>
           </p>
+          <form action="phpsample.php" method="post" class="mb-3">
           <div class="collapse" id="collapseExample">
             <div class="card card-body">
               <ul class="list-group">
-                <li class="list-group-item">Fish Fingers <input type="number"/></li>
-                <li class="list-group-item">French Fries</li>
-                <li class="list-group-item">Chicken Lollipop</li>
-                <li class="list-group-item">Spring Roll</li>
-                <li class="list-group-item">Vestibulum at eros</li>
+                <li class="list-group-item">Fish Fingers <div class="qty mt-5">
+                  <span class="minus bg-dark">-</span>
+                  <input type="number" class="count" name="qty" value="1">
+                  <span class="plus bg-dark">+</span>
+                  <button type="button" class="btn btn-success">Add</button>
+              </div>
+              </li>
+                <li class="list-group-item">French Fries<div class="qty mt-5">
+                  <span class="minus bg-dark">-</span>
+                  <input type="number" class="count" name="qty" value="1">
+                  <span class="plus bg-dark">+</span>
+                  <button type="button" class="btn btn-success">Add</button>
+              </div></li>
+                <li class="list-group-item">Chicken Lollipop<div class="qty mt-5">
+                  <span class="minus bg-dark">-</span>
+                  <input type="number" class="count" name="qty" value="1">
+                  <span class="plus bg-dark">+</span>
+                  <button type="button" class="btn btn-success">Add</button>
+              </div></li>
+                <li class="list-group-item">Spring Roll<div class="qty mt-5">
+                  <span class="minus bg-dark">-</span>
+                  <input type="number" class="count" name="qty" value="1">
+                  <span class="plus bg-dark">+</span>
+                  <button type="button" class="btn btn-success">Add</button>
+              </div></li>
+                <li class="list-group-item">Vestibulum at eros<div class="qty mt-5">
+                  <span class="minus bg-dark">-</span>
+                  <input type="number" class="count" name="qty" value="1">
+                  <span class="plus bg-dark">+</span>
+                  <button type="button" class="btn btn-success">Add</button>
+              </div></li>
               </ul>
             </div>
           </div>
+        </form>
         </div>
       </div>
       <div class="col-lg-4 col-sm-6">
@@ -92,11 +101,36 @@
           <div class="collapse" id="collapseExample1">
             <div class="card card-body">
               <ul class="list-group">
-                <li class="list-group-item">Hot and Sour </li>
-                <li class="list-group-item">Cream of Mushroom</li>
-                <li class="list-group-item">Sweet Corn </li>
-                <li class="list-group-item">Creamy Cauliflower</li>
-                <li class="list-group-item">Lemon Chicken</li>
+                <li class="list-group-item">Hot and Sour<div class="qty mt-5">
+                  <span class="minus bg-dark">-</span>
+                  <input type="number" class="count" name="qty" value="1">
+                  <span class="plus bg-dark">+</span>
+                  <button type="button" class="btn btn-success">Add</button>
+              </div> </li>
+                <li class="list-group-item">Cream of Mushroom<div class="qty mt-5">
+                  <span class="minus bg-dark">-</span>
+                  <input type="number" class="count" name="qty" value="1">
+                  <span class="plus bg-dark">+</span>
+                  <button type="button" class="btn btn-success">Add</button>
+              </div></li>
+                <li class="list-group-item">Sweet Corn <div class="qty mt-5">
+                  <span class="minus bg-dark">-</span>
+                  <input type="number" class="count" name="qty" value="1">
+                  <span class="plus bg-dark">+</span>
+                  <button type="button" class="btn btn-success">Add</button>
+              </div></li>
+                <li class="list-group-item">Creamy Cauliflower<div class="qty mt-5">
+                  <span class="minus bg-dark">-</span>
+                  <input type="number" class="count" name="qty" value="1">
+                  <span class="plus bg-dark">+</span>
+                  <button type="button" class="btn btn-success">Add</button>
+              </div></li>
+                <li class="list-group-item">Lemon Chicken<div class="qty mt-5">
+                  <span class="minus bg-dark">-</span>
+                  <input type="number" class="count" name="qty" value="1">
+                  <span class="plus bg-dark">+</span>
+                  <button type="button" class="btn btn-success">Add</button>
+              </div></li>
               </ul>
             </div>
           </div>
@@ -113,11 +147,36 @@
           <div class="collapse" id="collapseExample2">
             <div class="card card-body">
               <ul class="list-group">
-                <li class="list-group-item">Pesto Pasta</li>
-                <li class="list-group-item">White Sauce Pasta</li>
-                <li class="list-group-item">Chicken Sub </li>
-                <li class="list-group-item">Chicken Hyderabadi Biriyani</li>
-                <li class="list-group-item">Chicken Burger</li>
+                <li class="list-group-item">Pesto Pasta<div class="qty mt-5">
+                  <span class="minus bg-dark">-</span>
+                  <input type="number" class="count" name="qty" value="1">
+                  <span class="plus bg-dark">+</span>
+                  <button type="button" class="btn btn-success">Add</button>
+              </div></li>
+                <li class="list-group-item">White Sauce Pasta<div class="qty mt-5">
+                  <span class="minus bg-dark">-</span>
+                  <input type="number" class="count" name="qty" value="1">
+                  <span class="plus bg-dark">+</span>
+                  <button type="button" class="btn btn-success">Add</button>
+              </div></li>
+                <li class="list-group-item">Chicken Sub <div class="qty mt-5">
+                  <span class="minus bg-dark">-</span>
+                  <input type="number" class="count" name="qty" value="1">
+                  <span class="plus bg-dark">+</span>
+                  <button type="button" class="btn btn-success">Add</button>
+              </div></li>
+                <li class="list-group-item">Chicken Hyderabadi Biriyani<div class="qty mt-5">
+                  <span class="minus bg-dark">-</span>
+                  <input type="number" class="count" name="qty" value="1">
+                  <span class="plus bg-dark">+</span>
+                  <button type="button" class="btn btn-success">Add</button>
+              </div></li>
+                <li class="list-group-item">Chicken Burger<div class="qty mt-5">
+                  <span class="minus bg-dark">-</span>
+                  <input type="number" class="count" name="qty" value="1">
+                  <span class="plus bg-dark">+</span>
+                  <button type="button" class="btn btn-success">Add</button>
+              </div></li>
               </ul>
             </div>
           </div>
@@ -136,11 +195,36 @@
           <div class="collapse" id="collapseExample3">
             <div class="card card-body">
               <ul class="list-group">
-                <li class="list-group-item">Ice Cream</li>
-                <li class="list-group-item">Cup Cakes</li>
-                <li class="list-group-item">Rainbow Cakes</li>
-                <li class="list-group-item">Chocolate Mousse</li>
-                <li class="list-group-item">Brownies</li>
+                <li class="list-group-item">Ice Cream<div class="qty mt-5">
+                  <span class="minus bg-dark">-</span>
+                  <input type="number" class="count" name="qty" value="1">
+                  <span class="plus bg-dark">+</span>
+                  <button type="button" class="btn btn-success">Add</button>
+              </div></li>
+                <li class="list-group-item">Cup Cakes<div class="qty mt-5">
+                  <span class="minus bg-dark">-</span>
+                  <input type="number" class="count" name="qty" value="1">
+                  <span class="plus bg-dark">+</span>
+                  <button type="button" class="btn btn-success">Add</button>
+              </div></li>
+                <li class="list-group-item">Rainbow Cakes<div class="qty mt-5">
+                  <span class="minus bg-dark">-</span>
+                  <input type="number" class="count" name="qty" value="1">
+                  <span class="plus bg-dark">+</span>
+                  <button type="button" class="btn btn-success">Add</button>
+              </div></li>
+                <li class="list-group-item">Chocolate Mousse<div class="qty mt-5">
+                  <span class="minus bg-dark">-</span>
+                  <input type="number" class="count" name="qty" value="1">
+                  <span class="plus bg-dark">+</span>
+                  <button type="button" class="btn btn-success">Add</button>
+              </div></li>
+                <li class="list-group-item">Brownies<div class="qty mt-5">
+                  <span class="minus bg-dark">-</span>
+                  <input type="number" class="count" name="qty" value="1">
+                  <span class="plus bg-dark">+</span>
+                  <button type="button" class="btn btn-success">Add</button>
+              </div></li>
               </ul>
             </div>
           </div>
@@ -157,58 +241,42 @@
           <div class="collapse" id="collapseExample4">
             <div class="card card-body">
               <ul class="list-group">
-                <li class="list-group-item">Lemon Tea</li>
-                <li class="list-group-item">Milk Tea</li>
-                <li class="list-group-item">Bubble Tea</li>
-                <li class="list-group-item">Black Tea</li>
-                <li class="list-group-item">Coffee</li>
+                <li class="list-group-item">Lemon Tea<div class="qty mt-5">
+                  <span class="minus bg-dark">-</span>
+                  <input type="number" class="count" name="qty" value="1">
+                  <span class="plus bg-dark">+</span>
+                  <button type="button" class="btn btn-success">Add</button>
+              </div></li>
+                <li class="list-group-item">Milk Tea<div class="qty mt-5">
+                  <span class="minus bg-dark">-</span>
+                  <input type="number" class="count" name="qty" value="1">
+                  <span class="plus bg-dark">+</span>
+                  <button type="button" class="btn btn-success">Add</button>
+              </div></li>
+                <li class="list-group-item">Bubble Tea<div class="qty mt-5">
+                  <span class="minus bg-dark">-</span>
+                  <input type="number" class="count" name="qty" value="1">
+                  <span class="plus bg-dark">+</span>
+                  <button type="button" class="btn btn-success">Add</button>
+              </div></li>
+                <li class="list-group-item">Black Tea<div class="qty mt-5">
+                  <span class="minus bg-dark">-</span>
+                  <input type="number" class="count" name="qty" value="1">
+                  <span class="plus bg-dark">+</span>
+                  <button type="button" class="btn btn-success">Add</button>
+              </div></li>
+                <li class="list-group-item">Coffee<div class="qty mt-5">
+                  <span class="minus bg-dark">-</span>
+                  <input type="number" class="count" name="qty" value="1">
+                  <span class="plus bg-dark">+</span>
+                  <button type="button" class="btn btn-success">Add</button>
+              </div></li>
               </ul>
             </div>
           </div>
         </div>
       </div>
     </div>
-      
-      
-
-
-
-      <!-- <div class="col-lg-4 col-sm-6">
-        <div class="thumbnail">
-          <img src="https://images.unsplash.com/photo-1442406964439-e46ab8eff7c4?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-6">
-        <div class="thumbnail">
-          <img src="https://images.unsplash.com/photo-1439524970634-649c37a69e5c?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1450&h=825&fit=crop&s=bfda9916c885869b43b70738693428d9">
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-6">
-        <div class="thumbnail">
-          <img src="https://images.unsplash.com/photo-1444090542259-0af8fa96557e?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-6">
-        <div class="thumbnail">
-          <img src="https://images.unsplash.com/photo-1434543177303-ef2cc7707e0d?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-6">
-        <div class="thumbnail">
-          <img src="https://images.unsplash.com/photo-1436262513933-a0b06755c784?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-6">
-        <div class="thumbnail">
-          <img src="https://images.unsplash.com/photo-1439396087961-98bc12c21176?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-6">
-        <div class="thumbnail">
-          <img src="https://images.unsplash.com/photo-1439694458393-78ecf14da7f9?dpr=2&fit=crop&fm=jpg&h=825&q=50&w=1450">
-      </div>
-    </div> -->
-  
 
 <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
