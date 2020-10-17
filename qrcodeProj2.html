@@ -11,7 +11,7 @@
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="qrcodeStyling2.css">
-  
+  <link rel="stylesheet" type="text/css" href="quantity.scss">
  
 </head>
 <body>
@@ -53,7 +53,11 @@
           <div class="collapse" id="collapseExample">
             <div class="card card-body">
               <form>
-                <input type="checkbox" id="bk" name="Starters" onClick="checkbox();" value="Fish Finger">Fish Finger<div class="form-group">
+                <input type="checkbox" id="bk" name="Starters" onClick="checkbox();" value="Fish Finger">Fish Finger
+                
+                  <input type="number" value="1" id="wgtmsr" min="1">
+                
+                <!-- <div class="form-group">
                   <select class="form-control" id="exampleFormControlSelect1">
                     <option>1</option>
                     <option>2</option>
@@ -61,7 +65,8 @@
                     <option>4</option>
                     <option>5</option>
                   </select>
-                </div><br>
+                </div> -->
+                <br>
                 <input type="checkbox" id="cr" name="Starters" onClick="checkbox();" value="French Fries">French Fries<br></br> 
                 <input type="checkbox" id="bk" name="Starters" onClick="checkbox();" value="Chicken Lollipop">Chicken Lollipop<br></br>
                 <input type="checkbox" id="cr" name="Starters" onClick="checkbox();" value="Nuggets">Nuggets<br></br> 
