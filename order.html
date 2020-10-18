@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>FOOD CART</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!-- fontawesome-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
@@ -10,12 +13,16 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+  <title>Order Now!!</title>
 <!-- partial:index.partial.html -->
 <!-- Nav -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <nav class="navbar  navbar-inverse bg-inverse fixed-top bg-faded">
     <div class="row">
-       <button type="button" class="btn btn-primary"  data-toggle="modal" data-target="#cart">Cart (<span class="total-count"></span>)</button>
+      <ul class="  nav navbar-nav text-right" >
+        <li class="nav-item" style="color:rgb(255, 255, 255);"><h1>Orders</h1></li>
+    </ul>
+       <button type="button" class="btn btn-primary ml-3"  data-toggle="modal" data-target="#cart">Cart (<span class="total-count"></span>)</button>
        <button class="clear-cart btn btn-danger ml-2" >Clear Cart</button>
     </div>
 </nav>
@@ -210,8 +217,8 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
-        <table class="show-cart table">
+      <div class="d-flex modal-body">
+        <table class=" show-cart table">
           
         </table>
         <div>Total price: ₹<span class="total-cart"></span></div>
@@ -224,6 +231,64 @@
   </div>
 </div>
 <!-- partial -->
+
+
+ <!-- footer -->
+ <footer  style="background-color: #2c292f">
+  <div class="container">
+      <div class="row ">
+          <div class="col-md-4 text-center text-md-left ">
+              
+              <div class="py-0">
+                  <h3 class="my-4 text-white">About<span class="mx-2 font-italic text-warning ">EAT STREET</span></h3>
+
+                  <p class="footer-links font-weight-bold">
+                      <a class="text-white" href="#">Home</a>
+                      |
+                      <a class="text-white" href="#">Blog</a>
+                      |
+                      <a class="text-white" href="#">About</a>
+                      |
+                      <a class="text-white" href="#">Contact</a>
+                  </p>
+                  <p class="text-light py-4 mb-4">&copy;2020 All Rights Reserved</p>
+              </div>
+          </div>
+          
+          <div class="col-md-4 text-white text-center text-md-left ">
+              <div class="py-2 my-4">
+                  <div>
+                      <p class="text-white"> <i class="fa fa-map-marker mx-2 "></i>
+                        No : 131, 48, Velachery Main Rd, Little Mount, Saidapet, Chennai, Tamil Nadu 600015</p>
+                  </div>
+
+                  <div> 
+                      <p><i class="fa fa-phone  mx-2 "></i> +91 96004 90540 </p>
+                  </div>
+                  <div>
+                      <p><i class="fa fa-envelope  mx-2"></i><a href="mailto:eatstreet@gmail.com">eatstreet@gmail.com</a></p>
+                  </div>  
+              </div>  
+          </div>
+          
+          <div class="col-md-4 text-white my-4 text-center text-md-left ">
+              <span class=" font-weight-bold ">About the Company</span>
+    <p class="text-warning my-2" >We serve quality foods at lower costs with hygiene.</p>
+              <div class="py-2">
+                  <a href="#"><i class="fab fa-facebook fa-2x text-primary mx-3"></i></a>
+                  <a href="#"><i class="fab fa-google-plus fa-2x text-danger mx-3"></i></a>
+                  <a href="#"><i class="fab fa-twitter fa-2x text-info mx-3"></i></a>
+                  <a href="#"><i class="fab fa-youtube fa-2x text-danger mx-3"></i></a>
+              </div>
+          </div>
+      </div>  
+  </div>
+</footer>
+<!-- end of footer -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
   <script  src="script.js"></script>
 

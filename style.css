@@ -1,7 +1,7 @@
 
 body {
   padding-top: 80px;
-  background-color:#55bcc9 ;
+  background-image: linear-gradient(to right,  #d7d2cc  , #304352);
 }
 
 .show-cart li {
